@@ -18,13 +18,13 @@ const Hero = () => {
   return (
     <section id="home" className="min-h-screen flex items-center justify-center relative overflow-hidden">
       {/* Background gradient */}
-      <div className="absolute inset-0 bg-gradient-to-br from-portfolio-blue-50 via-portfolio-purple-100 to-portfolio-blue-50 dark:from-portfolio-gray-900 dark:via-portfolio-gray-800 dark:to-portfolio-gray-900 opacity-50"></div>
+      <div className="absolute inset-0 bg-gradient-to-br from-slate-50 via-slate-100 to-slate-50 dark:from-slate-900 dark:via-slate-800 dark:to-slate-900 opacity-50"></div>
       
       {/* Animated background elements */}
       <div className="absolute inset-0 overflow-hidden">
-        <div className="absolute -top-10 -left-10 w-20 h-20 bg-portfolio-blue-500 rounded-full opacity-10 animate-float"></div>
-        <div className="absolute top-1/4 right-10 w-16 h-16 bg-portfolio-purple-500 rounded-full opacity-10 animate-float" style={{ animationDelay: '1s' }}></div>
-        <div className="absolute bottom-1/4 left-1/4 w-12 h-12 bg-portfolio-blue-600 rounded-full opacity-10 animate-float" style={{ animationDelay: '2s' }}></div>
+        <div className="absolute -top-10 -left-10 w-20 h-20 bg-slate-400 rounded-full opacity-10 animate-float"></div>
+        <div className="absolute top-1/4 right-10 w-16 h-16 bg-slate-500 rounded-full opacity-10 animate-float" style={{ animationDelay: '1s' }}></div>
+        <div className="absolute bottom-1/4 left-1/4 w-12 h-12 bg-slate-600 rounded-full opacity-10 animate-float" style={{ animationDelay: '2s' }}></div>
       </div>
 
       <div className="container mx-auto px-4 relative z-10">
@@ -38,8 +38,8 @@ const Hero = () => {
               Computer Science Graduate & Applications Developer
             </p>
             <p className="text-lg text-muted-foreground mb-12 max-w-2xl mx-auto leading-relaxed animate-fade-in" style={{ animationDelay: '0.3s' }}>
-              Passionate about developing innovative applications with experience in .NET, React, and mobile development. 
-              I specialize in building scalable solutions for complex business requirements.
+              Computer Science graduate from Louisiana State University with hands-on experience developing 
+              enterprise-level .NET applications for 100,000+ users and building full-stack solutions.
             </p>
           </div>
 
@@ -47,7 +47,7 @@ const Hero = () => {
             <Button 
               onClick={scrollToProjects}
               size="lg" 
-              className="bg-primary hover:bg-primary/90 text-primary-foreground px-8 py-3 rounded-full font-medium transition-all duration-300 transform hover:scale-105"
+              className="px-8 py-3 rounded-full font-medium transition-all duration-300 transform hover:scale-105"
             >
               View My Work
             </Button>
