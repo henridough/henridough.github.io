@@ -75,11 +75,7 @@ const About = () => {
               {timeline.map((item, index) => (
                 <div key={index} className="relative flex items-start space-x-4 pb-8">
                   {/* Timeline dot */}
-                  <div className={`relative z-10 w-8 h-8 rounded-full flex items-center justify-center ${
-                    item.type === 'work' 
-                      ? 'bg-primary text-primary-foreground' 
-                      : 'bg-portfolio-purple-500 text-white'
-                  }`}>
+                  <div className="relative z-10 w-8 h-8 rounded-full flex items-center justify-center bg-primary text-primary-foreground">
                     <div className="w-2 h-2 bg-current rounded-full"></div>
                   </div>
                   
@@ -88,11 +84,7 @@ const About = () => {
                     <CardContent className="p-4">
                       <div className="flex items-center gap-2 mb-2">
                         <span className="text-sm font-medium text-muted-foreground">{item.year}</span>
-                        <span className={`px-2 py-1 rounded-full text-xs font-medium ${
-                          item.type === 'work' 
-                            ? 'bg-primary/10 text-primary' 
-                            : 'bg-portfolio-purple-100 text-portfolio-purple-600'
-                        }`}>
+                        <span className="px-2 py-1 rounded-full text-xs font-medium bg-muted text-muted-foreground">
                           {item.type === 'work' ? 'Work' : 'Education'}
                         </span>
                       </div>

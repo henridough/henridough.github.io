@@ -8,82 +8,82 @@
 @layer base {
   :root {
     --background: 255 255 255;
-    --foreground: 30 41 59;
+    --foreground: 0 0 0;
 
     --card: 255 255 255;
-    --card-foreground: 30 41 59;
+    --card-foreground: 0 0 0;
 
     --popover: 255 255 255;
-    --popover-foreground: 30 41 59;
+    --popover-foreground: 0 0 0;
 
-    --primary: 71 85 105;
-    --primary-foreground: 248 250 252;
+    --primary: 0 0 0;
+    --primary-foreground: 255 255 255;
 
-    --secondary: 248 250 252;
-    --secondary-foreground: 30 41 59;
+    --secondary: 245 245 245;
+    --secondary-foreground: 0 0 0;
 
-    --muted: 248 250 252;
-    --muted-foreground: 100 116 139;
+    --muted: 245 245 245;
+    --muted-foreground: 115 115 115;
 
-    --accent: 241 245 249;
-    --accent-foreground: 30 41 59;
+    --accent: 240 240 240;
+    --accent-foreground: 0 0 0;
 
-    --destructive: 185 28 28;
-    --destructive-foreground: 248 250 252;
+    --destructive: 0 0 0;
+    --destructive-foreground: 255 255 255;
 
-    --border: 226 232 240;
-    --input: 226 232 240;
-    --ring: 71 85 105;
+    --border: 229 229 229;
+    --input: 229 229 229;
+    --ring: 0 0 0;
 
     --radius: 0.5rem;
 
     --sidebar-background: 255 255 255;
-    --sidebar-foreground: 51 65 85;
-    --sidebar-primary: 30 41 59;
-    --sidebar-primary-foreground: 248 250 252;
-    --sidebar-accent: 248 250 252;
-    --sidebar-accent-foreground: 30 41 59;
-    --sidebar-border: 226 232 240;
-    --sidebar-ring: 71 85 105;
+    --sidebar-foreground: 0 0 0;
+    --sidebar-primary: 0 0 0;
+    --sidebar-primary-foreground: 255 255 255;
+    --sidebar-accent: 245 245 245;
+    --sidebar-accent-foreground: 0 0 0;
+    --sidebar-border: 229 229 229;
+    --sidebar-ring: 0 0 0;
   }
 
   .dark {
-    --background: 2 6 23;
-    --foreground: 226 232 240;
+    --background: 0 0 0;
+    --foreground: 255 255 255;
 
-    --card: 15 23 42;
-    --card-foreground: 226 232 240;
+    --card: 23 23 23;
+    --card-foreground: 255 255 255;
 
-    --popover: 15 23 42;
-    --popover-foreground: 226 232 240;
+    --popover: 23 23 23;
+    --popover-foreground: 255 255 255;
 
-    --primary: 100 116 139;
-    --primary-foreground: 15 23 42;
+    --primary: 255 255 255;
+    --primary-foreground: 0 0 0;
 
-    --secondary: 30 41 59;
-    --secondary-foreground: 226 232 240;
+    --secondary: 38 38 38;
+    --secondary-foreground: 255 255 255;
 
-    --muted: 30 41 59;
-    --muted-foreground: 148 163 184;
+    --muted: 38 38 38;
+    --muted-foreground: 163 163 163;
 
-    --accent: 30 41 59;
-    --accent-foreground: 226 232 240;
+    --accent: 38 38 38;
+    --accent-foreground: 255 255 255;
 
-    --destructive: 153 27 27;
-    --destructive-foreground: 226 232 240;
+    --destructive: 255 255 255;
+    --destructive-foreground: 0 0 0;
 
-    --border: 30 41 59;
-    --input: 30 41 59;
-    --ring: 100 116 139;
+    --border: 38 38 38;
+    --input: 38 38 38;
+    --ring: 255 255 255;
 
-    --sidebar-background: 2 6 23;
-    --sidebar-foreground: 148 163 184;
-    --sidebar-primary: 100 116 139;
-    --sidebar-primary-foreground: 15 23 42;
-    --sidebar-accent: 30 41 59;
-    --sidebar-accent-foreground: 148 163 184;
-    --sidebar-border: 30 41 59;
-    --sidebar-ring: 100 116 139;
+    --sidebar-background: 0 0 0;
+    --sidebar-foreground: 163 163 163;
+    --sidebar-primary: 255 255 255;
+    --sidebar-primary-foreground: 0 0 0;
+    --sidebar-accent: 38 38 38;
+    --sidebar-accent-foreground: 163 163 163;
+    --sidebar-border: 38 38 38;
+    --sidebar-ring: 255 255 255;
   }
 }
 
@@ -103,6 +103,6 @@
 
 @layer utilities {
   .text-gradient {
-    @apply bg-gradient-to-r from-slate-600 to-slate-700 bg-clip-text text-transparent;
+    @apply bg-gradient-to-r from-gray-600 to-black bg-clip-text text-transparent;
   }
 }

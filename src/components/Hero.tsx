@@ -12,19 +12,22 @@ const Hero = () => {
 
   const downloadResume = () => {
     // This would link to your actual resume file
-    console.log('Downloading resume...');
+    const link = document.createElement('a');
+    link.href = '/henry-do-resume.pdf';
+    link.download = 'Henry_Do_Resume.pdf';
+    link.click();
   };
 
   return (
     <section id="home" className="min-h-screen flex items-center justify-center relative overflow-hidden">
       {/* Background gradient */}
-      <div className="absolute inset-0 bg-gradient-to-br from-slate-50 via-slate-100 to-slate-50 dark:from-slate-900 dark:via-slate-800 dark:to-slate-900 opacity-50"></div>
+      <div className="absolute inset-0 bg-gradient-to-br from-gray-50 via-gray-100 to-gray-50 dark:from-gray-900 dark:via-gray-800 dark:to-gray-900 opacity-50"></div>
       
       {/* Animated background elements */}
       <div className="absolute inset-0 overflow-hidden">
-        <div className="absolute -top-10 -left-10 w-20 h-20 bg-slate-400 rounded-full opacity-10 animate-float"></div>
-        <div className="absolute top-1/4 right-10 w-16 h-16 bg-slate-500 rounded-full opacity-10 animate-float" style={{ animationDelay: '1s' }}></div>
-        <div className="absolute bottom-1/4 left-1/4 w-12 h-12 bg-slate-600 rounded-full opacity-10 animate-float" style={{ animationDelay: '2s' }}></div>
+        <div className="absolute -top-10 -left-10 w-20 h-20 bg-gray-400 rounded-full opacity-10 animate-float"></div>
+        <div className="absolute top-1/4 right-10 w-16 h-16 bg-gray-500 rounded-full opacity-10 animate-float" style={{ animationDelay: '1s' }}></div>
+        <div className="absolute bottom-1/4 left-1/4 w-12 h-12 bg-gray-600 rounded-full opacity-10 animate-float" style={{ animationDelay: '2s' }}></div>
       </div>
 
       <div className="container mx-auto px-4 relative z-10">

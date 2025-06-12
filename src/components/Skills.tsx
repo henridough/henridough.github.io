@@ -57,7 +57,7 @@ const Skills = () => {
             <Card key={category.title} className="group hover:shadow-lg transition-all duration-300">
               <CardHeader className="text-center">
                 <div className="flex justify-center mb-4">
-                  <div className="p-3 bg-primary/10 rounded-full text-primary group-hover:bg-primary group-hover:text-primary-foreground transition-colors duration-300">
+                  <div className="p-3 bg-muted rounded-full text-foreground group-hover:bg-primary group-hover:text-primary-foreground transition-colors duration-300">
                     {category.icon}
                   </div>
                 </div>
