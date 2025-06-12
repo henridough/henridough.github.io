@@ -74,10 +74,10 @@ const Contact = () => {
                   <div>
                     <p className="font-medium">Email</p>
                     <a 
-                      href="mailto:your.email@example.com" 
+                      href="mailto:henrygreen101@outlook.com" 
                       className="text-sm text-muted-foreground hover:text-primary transition-colors"
                     >
-                      your.email@example.com
+                      henrygreen101@outlook.com
                     </a>
                   </div>
                 </div>
@@ -91,12 +91,12 @@ const Contact = () => {
                   <div>
                     <p className="font-medium">LinkedIn</p>
                     <a 
-                      href="https://linkedin.com/in/yourprofile" 
+                      href="https://linkedin.com/in/henrydo" 
                       target="_blank" 
                       rel="noopener noreferrer"
                       className="text-sm text-muted-foreground hover:text-primary transition-colors"
                     >
-                      linkedin.com/in/yourprofile
+                      LinkedIn Profile
                     </a>
                   </div>
                 </div>
@@ -110,12 +110,29 @@ const Contact = () => {
                   <div>
                     <p className="font-medium">GitHub</p>
                     <a 
-                      href="https://github.com/yourusername" 
+                      href="https://github.com/henrydo" 
                       target="_blank" 
                       rel="noopener noreferrer"
                       className="text-sm text-muted-foreground hover:text-primary transition-colors"
                     >
-                      github.com/yourusername
+                      GitHub Profile
+                    </a>
+                  </div>
+                </div>
+              </Card>
+
+              <Card className="p-4 hover:shadow-md transition-shadow duration-300">
+                <div className="flex items-center space-x-3">
+                  <div className="p-2 bg-portfolio-gray-100 rounded-lg">
+                    <Mail className="h-5 w-5 text-portfolio-gray-700" />
+                  </div>
+                  <div>
+                    <p className="font-medium">Phone</p>
+                    <a 
+                      href="tel:(504) 884-7618" 
+                      className="text-sm text-muted-foreground hover:text-primary transition-colors"
+                    >
+                      (504) 884-7618
                     </a>
                   </div>
                 </div>

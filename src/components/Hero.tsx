@@ -32,14 +32,14 @@ const Hero = () => {
           <div className="animate-fade-in">
             <h1 className="text-5xl md:text-7xl font-bold font-poppins mb-6">
               Hi, I'm{' '}
-              <span className="text-gradient">Your Name</span>
+              <span className="text-gradient">Henry Do</span>
             </h1>
             <p className="text-xl md:text-2xl text-muted-foreground mb-8 animate-slide-in-left">
-              Computer Science Graduate & Application Developer
+              Computer Science Graduate & Applications Developer
             </p>
             <p className="text-lg text-muted-foreground mb-12 max-w-2xl mx-auto leading-relaxed animate-fade-in" style={{ animationDelay: '0.3s' }}>
-              Passionate about creating innovative web applications with 6 months of hands-on experience 
-              in application development. I love turning complex problems into simple, beautiful designs.
+              Passionate about developing innovative applications with experience in .NET, React, and mobile development. 
+              I specialize in building scalable solutions for complex business requirements.
             </p>
           </div>
 

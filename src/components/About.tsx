@@ -6,23 +6,16 @@ const About = () => {
   const timeline = [
     {
       year: '2024',
-      title: 'Application Developer',
-      organization: 'Tech Company',
-      description: 'Started my professional journey as an Application Developer, working on web applications using React and Node.js.',
-      type: 'work'
-    },
-    {
-      year: '2023',
-      title: 'Bachelor of Computer Science',
-      organization: 'University Name',
-      description: 'Graduated with a degree in Computer Science, focusing on software development and data structures.',
+      title: 'Bachelor of Science, Computer Science',
+      organization: 'Louisiana State University',
+      description: 'Graduated with a degree in Computer Science, focusing on data structures, software development, and cybersecurity.',
       type: 'education'
     },
     {
-      year: '2022',
-      title: 'Software Development Intern',
-      organization: 'Startup Company',
-      description: 'Gained hands-on experience in full-stack development and agile methodologies.',
+      year: '2023',
+      title: 'Applications Developer Intern',
+      organization: 'Louisiana State Employees\' Retirement System',
+      description: 'Developed and maintained .NET applications using C#, ASP.NET, and SQL Server for 100,000+ members. Participated in Agile/Scrum methodologies.',
       type: 'work'
     }
   ];
@@ -45,16 +38,20 @@ const About = () => {
             <div className="space-y-4">
               <h3 className="text-2xl font-bold font-poppins">Hi there! 👋</h3>
               <p className="text-muted-foreground leading-relaxed">
-                I'm a passionate Computer Science graduate with 6 months of professional experience as an Application Developer. 
-                My journey in tech started during college, where I discovered my love for creating digital solutions that make a difference.
+                I'm Henry Do, a Computer Science graduate from Louisiana State University with hands-on experience 
+                as an Applications Developer. My journey in tech has led me through developing enterprise-level 
+                .NET applications, building mobile apps with Flutter, and creating full-stack web solutions.
               </p>
               <p className="text-muted-foreground leading-relaxed">
-                I specialize in building modern web applications using React, TypeScript, and Node.js. I'm particularly interested 
-                in creating user-friendly interfaces and writing clean, maintainable code. When I'm not coding, you'll find me 
-                exploring new technologies, contributing to open-source projects, or reading about the latest trends in software development.
+                During my internship at Louisiana State Employees' Retirement System, I worked on mission-critical 
+                applications serving over 100,000 members, collaborating in Agile environments and contributing to 
+                sprint planning and CI/CD automation. I'm passionate about writing clean, maintainable code and 
+                building solutions that make a real impact.
               </p>
               <p className="text-muted-foreground leading-relaxed">
-                I believe in continuous learning and am always excited to take on new challenges that push me to grow as a developer.
+                I believe in continuous learning and enjoy exploring new technologies, from mobile development 
+                to cloud computing and cybersecurity. When I'm not coding, you'll find me working on personal 
+                projects or contributing to open-source initiatives.
               </p>
             </div>
 

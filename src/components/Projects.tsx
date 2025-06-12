@@ -22,44 +22,43 @@ const Projects = () => {
   const projects: Project[] = [
     {
       id: 1,
-      title: 'E-Commerce Platform',
-      description: 'A full-stack e-commerce solution with React, Node.js, and MongoDB. Features include user authentication, payment integration, and admin dashboard.',
-      image: 'https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=400&h=200&fit=crop',
-      tech: ['React', 'Node.js', 'MongoDB', 'Express'],
-      category: 'Full Stack',
-      githubUrl: 'https://github.com',
-      liveUrl: 'https://demo.com'
+      title: 'Automobile Service App',
+      description: 'A comprehensive mobile application built with Flutter for Android/iOS platforms. Features real-time database interactions, service tracking, and user account management with Firebase backend integration.',
+      image: 'https://images.unsplash.com/photo-1519641471654-76ce0107ad1b?w=400&h=200&fit=crop',
+      tech: ['Flutter', 'Firebase', 'Android Studio', 'Figma', 'Blender'],
+      category: 'Mobile',
+      githubUrl: 'https://github.com'
     },
     {
       id: 2,
-      title: 'Task Management App',
-      description: 'A responsive task management application built with React and TypeScript. Features drag-and-drop functionality and real-time updates.',
-      image: 'https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=400&h=200&fit=crop',
-      tech: ['React', 'TypeScript', 'Tailwind CSS'],
-      category: 'Frontend',
+      title: 'PC Builder Project',
+      description: 'A full-stack web application for custom PC configuration management. Built with React frontend and Java backend, featuring modular design and reusable components for optimal maintainability.',
+      image: 'https://images.unsplash.com/photo-1591488320449-011701bb6704?w=400&h=200&fit=crop',
+      tech: ['React', 'Java', 'MongoDB', 'HTML/CSS'],
+      category: 'Full Stack',
       githubUrl: 'https://github.com'
     },
     {
       id: 3,
-      title: 'REST API Server',
-      description: 'A scalable REST API built with Node.js and Express, featuring JWT authentication, data validation, and comprehensive documentation.',
-      image: 'https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=400&h=200&fit=crop',
-      tech: ['Node.js', 'Express', 'JWT', 'Swagger'],
-      category: 'Backend',
+      title: 'Retirement System Applications',
+      description: 'Enterprise-level .NET applications developed for Louisiana State Employees\' Retirement System. Built custom queries and reports for 100,000+ members using C#, ASP.NET, and SQL Server.',
+      image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=400&h=200&fit=crop',
+      tech: ['C#', 'ASP.NET', 'SQL Server', '.NET Core', 'Azure DevOps'],
+      category: 'Enterprise',
       githubUrl: 'https://github.com'
     },
     {
       id: 4,
-      title: 'Weather Dashboard',
-      description: 'A beautiful weather dashboard with location-based forecasts, interactive charts, and responsive design.',
-      image: 'https://images.unsplash.com/photo-1504608524841-42fe6f032b4b?w=400&h=200&fit=crop',
-      tech: ['React', 'Chart.js', 'Weather API'],
-      category: 'Frontend',
+      title: 'Database Management System',
+      description: 'Comprehensive database solution with advanced query optimization and data management capabilities. Implemented using modern database technologies and best practices.',
+      image: 'https://images.unsplash.com/photo-1544383835-bda2bc66a55d?w=400&h=200&fit=crop',
+      tech: ['MySQL', 'SQLite', 'SQL Server', 'MongoDB'],
+      category: 'Backend',
       githubUrl: 'https://github.com'
     }
   ];
 
-  const categories = ['All', 'Frontend', 'Backend', 'Full Stack'];
+  const categories = ['All', 'Mobile', 'Full Stack', 'Enterprise', 'Backend'];
 
   const filteredProjects = selectedCategory === 'All' 
     ? projects 
@@ -73,7 +72,8 @@ const Projects = () => {
             Featured <span className="text-gradient">Projects</span>
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Here are some of my recent projects that showcase my skills and experience in web development.
+            Here are some of my notable projects that showcase my skills in application development, 
+            from mobile apps to enterprise systems.
           </p>
         </div>
 
