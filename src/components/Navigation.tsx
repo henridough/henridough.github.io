@@ -23,7 +23,7 @@ const Navigation = () => {
   };
 
   return (
-    <nav className="fixed top-0 w-full bg-background/80 backdrop-blur-md border-b border-border z-50">
+    <nav className="fixed top-0 w-full bg-background/80 backdrop-blur-md border-b border-border z-50 border-red-500">
       <div className="container mx-auto px-4">
         <div className="flex justify-between items-center h-16">
           <div className="font-poppins font-bold text-xl text-gradient">
