@@ -39,15 +39,6 @@ const Projects = () => {
       githubUrl: 'https://github.com'
     },
     {
-      id: 3,
-      title: 'Retirement System Applications',
-      description: 'Enterprise-level .NET applications developed for Louisiana State Employees\' Retirement System. Built custom queries and reports for 100,000+ members using C#, ASP.NET, and SQL Server.',
-      image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=400&h=200&fit=crop',
-      tech: ['C#', 'ASP.NET', 'SQL Server', '.NET Core', 'Azure DevOps'],
-      category: 'Enterprise',
-      githubUrl: 'https://github.com'
-    },
-    {
       id: 4,
       title: 'Database Management System',
       description: 'Comprehensive database solution with advanced query optimization and data management capabilities. Implemented using modern database technologies and best practices.',
@@ -58,22 +49,22 @@ const Projects = () => {
     }
   ];
 
-  const categories = ['All', 'Mobile', 'Full Stack', 'Enterprise', 'Backend'];
+  const categories = ['All', 'Mobile', 'Full Stack', 'Backend'];
 
   const filteredProjects = selectedCategory === 'All' 
     ? projects 
     : projects.filter(project => project.category === selectedCategory);
 
   return (
-    <section id="projects" className="py-20 bg-gray-100">
+    <section id="projects" className="py-20 bg-gray-900">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold font-poppins mb-4 text-black">
-            Featured <span className="bg-gradient-to-r from-gray-600 to-black bg-clip-text text-transparent">Projects</span>
+          <h2 className="text-4xl font-bold font-poppins mb-4 text-white">
+            Featured <span className="bg-gradient-to-r from-green-400 to-green-600 bg-clip-text text-transparent">Projects</span>
           </h2>
-          <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+          <p className="text-lg text-gray-300 max-w-2xl mx-auto">
             Here are some of my notable projects that showcase my skills in application development, 
-            from mobile apps to enterprise systems.
+            from mobile apps to full-stack systems.
           </p>
         </div>
 
@@ -85,8 +76,8 @@ const Projects = () => {
               variant={selectedCategory === category ? "default" : "outline"}
               onClick={() => setSelectedCategory(category)}
               className={selectedCategory === category 
-                ? "rounded-full bg-black text-white hover:bg-gray-800" 
-                : "rounded-full border-black text-black hover:bg-black hover:text-white"
+                ? "rounded-full bg-green-500 text-black hover:bg-green-400 font-medium" 
+                : "rounded-full border-green-500 text-green-500 hover:bg-green-500 hover:text-black font-medium"
               }
             >
               {category}
@@ -97,7 +88,7 @@ const Projects = () => {
         {/* Projects grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {filteredProjects.map((project) => (
-            <Card key={project.id} className="group hover:shadow-lg transition-all duration-300 transform hover:-translate-y-2 bg-white border-gray-200">
+            <Card key={project.id} className="group hover:shadow-lg hover:shadow-green-500/10 transition-all duration-300 transform hover:-translate-y-2 bg-gray-800 border-gray-700 hover:border-green-500/50">
               <div className="aspect-video overflow-hidden rounded-t-lg">
                 <img 
                   src={project.image} 
@@ -106,28 +97,28 @@ const Projects = () => {
                 />
               </div>
               <CardHeader>
-                <CardTitle className="text-xl font-poppins text-black">{project.title}</CardTitle>
-                <CardDescription className="text-sm text-gray-600">
+                <CardTitle className="text-xl font-poppins text-white">{project.title}</CardTitle>
+                <CardDescription className="text-sm text-gray-300">
                   {project.description}
                 </CardDescription>
               </CardHeader>
               <CardContent>
                 <div className="flex flex-wrap gap-2 mb-4">
                   {project.tech.map((tech) => (
-                    <Badge key={tech} className="text-xs bg-gray-200 text-black hover:bg-gray-300">
+                    <Badge key={tech} className="text-xs bg-gray-700 text-green-400 hover:bg-gray-600 border-green-500/20">
                       {tech}
                     </Badge>
                   ))}
                 </div>
                 <div className="flex gap-2">
-                  <Button size="sm" variant="outline" asChild className="border-black text-black hover:bg-black hover:text-white">
+                  <Button size="sm" variant="outline" asChild className="border-green-500 text-green-500 hover:bg-green-500 hover:text-black">
                     <a href={project.githubUrl} target="_blank" rel="noopener noreferrer">
                       <Github className="h-4 w-4 mr-2" />
                       Code
                     </a>
                   </Button>
                   {project.liveUrl && (
-                    <Button size="sm" asChild className="bg-black text-white hover:bg-gray-800">
+                    <Button size="sm" asChild className="bg-green-500 text-black hover:bg-green-400">
                       <a href={project.liveUrl} target="_blank" rel="noopener noreferrer">
                         Live Demo
                       </a>
