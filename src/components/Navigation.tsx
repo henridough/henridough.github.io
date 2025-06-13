@@ -46,17 +46,17 @@ const Navigation = () => {
           {/* Social Links */}
           <div className="hidden md:flex items-center space-x-4">
             <Button variant="ghost" size="sm" asChild className="text-gray-300 hover:text-white hover:bg-gray-800">
-              <a href="https://github.com" target="_blank" rel="noopener noreferrer">
+              <a href="https://github.com/henrydo" target="_blank" rel="noopener noreferrer">
                 <Github className="h-4 w-4" />
               </a>
             </Button>
             <Button variant="ghost" size="sm" asChild className="text-gray-300 hover:text-white hover:bg-gray-800">
-              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
+              <a href="https://linkedin.com/in/henrydo" target="_blank" rel="noopener noreferrer">
                 <Linkedin className="h-4 w-4" />
               </a>
             </Button>
             <Button variant="ghost" size="sm" asChild className="text-gray-300 hover:text-white hover:bg-gray-800">
-              <a href="mailto:your.email@example.com">
+              <a href="mailto:henrygreen101@outlook.com">
                 <Mail className="h-4 w-4" />
               </a>
             </Button>
@@ -90,17 +90,17 @@ const Navigation = () => {
               ))}
               <div className="flex space-x-4 px-3 py-2">
                 <Button variant="ghost" size="sm" asChild className="text-gray-300 hover:text-white hover:bg-gray-800">
-                  <a href="https://github.com" target="_blank" rel="noopener noreferrer">
+                  <a href="https://github.com/henrydo" target="_blank" rel="noopener noreferrer">
                     <Github className="h-4 w-4" />
                   </a>
                 </Button>
                 <Button variant="ghost" size="sm" asChild className="text-gray-300 hover:text-white hover:bg-gray-800">
-                  <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
+                  <a href="https://linkedin.com/in/henrydo" target="_blank" rel="noopener noreferrer">
                     <Linkedin className="h-4 w-4" />
                   </a>
                 </Button>
                 <Button variant="ghost" size="sm" asChild className="text-gray-300 hover:text-white hover:bg-gray-800">
-                  <a href="mailto:your.email@example.com">
+                  <a href="mailto:henrygreen101@outlook.com">
                     <Mail className="h-4 w-4" />
                   </a>
                 </Button>

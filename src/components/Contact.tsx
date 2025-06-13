@@ -4,7 +4,7 @@ import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
-import { Mail, Linkedin, Github } from 'lucide-react';
+import { Mail, Linkedin, Github, Phone } from 'lucide-react';
 import { useToast } from '@/hooks/use-toast';
 
 const Contact = () => {
@@ -44,13 +44,13 @@ const Contact = () => {
   };
 
   return (
-    <section id="contact" className="py-20">
+    <section id="contact" className="py-20 bg-white">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold font-poppins mb-4">
-            Get In <span className="text-gradient">Touch</span>
+          <h2 className="text-4xl font-bold font-poppins mb-4 text-black">
+            Get In <span className="bg-gradient-to-r from-gray-600 to-black bg-clip-text text-transparent">Touch</span>
           </h2>
-          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+          <p className="text-lg text-gray-600 max-w-2xl mx-auto">
             I'm always open to discussing new opportunities, collaborations, or just having a chat about technology.
           </p>
         </div>
@@ -59,23 +59,23 @@ const Contact = () => {
           {/* Contact info */}
           <div className="space-y-6">
             <div>
-              <h3 className="text-2xl font-bold font-poppins mb-6">Let's Connect</h3>
-              <p className="text-muted-foreground mb-8">
+              <h3 className="text-2xl font-bold font-poppins mb-6 text-black">Let's Connect</h3>
+              <p className="text-gray-600 mb-8">
                 Feel free to reach out through any of these channels. I typically respond within 24 hours.
               </p>
             </div>
 
             <div className="space-y-4">
-              <Card className="p-4 hover:shadow-md transition-shadow duration-300">
+              <Card className="p-4 hover:shadow-md transition-shadow duration-300 border-gray-200">
                 <div className="flex items-center space-x-3">
-                  <div className="p-2 bg-primary/10 rounded-lg">
-                    <Mail className="h-5 w-5 text-primary" />
+                  <div className="p-2 bg-gray-100 rounded-lg">
+                    <Mail className="h-5 w-5 text-black" />
                   </div>
                   <div>
-                    <p className="font-medium">Email</p>
+                    <p className="font-medium text-black">Email</p>
                     <a 
                       href="mailto:henrygreen101@outlook.com" 
-                      className="text-sm text-muted-foreground hover:text-primary transition-colors"
+                      className="text-sm text-gray-600 hover:text-black transition-colors"
                     >
                       henrygreen101@outlook.com
                     </a>
@@ -83,18 +83,18 @@ const Contact = () => {
                 </div>
               </Card>
 
-              <Card className="p-4 hover:shadow-md transition-shadow duration-300">
+              <Card className="p-4 hover:shadow-md transition-shadow duration-300 border-gray-200">
                 <div className="flex items-center space-x-3">
-                  <div className="p-2 bg-portfolio-blue-100 rounded-lg">
-                    <Linkedin className="h-5 w-5 text-portfolio-blue-600" />
+                  <div className="p-2 bg-gray-100 rounded-lg">
+                    <Linkedin className="h-5 w-5 text-black" />
                   </div>
                   <div>
-                    <p className="font-medium">LinkedIn</p>
+                    <p className="font-medium text-black">LinkedIn</p>
                     <a 
                       href="https://linkedin.com/in/henrydo" 
                       target="_blank" 
                       rel="noopener noreferrer"
-                      className="text-sm text-muted-foreground hover:text-primary transition-colors"
+                      className="text-sm text-gray-600 hover:text-black transition-colors"
                     >
                       LinkedIn Profile
                     </a>
@@ -102,18 +102,18 @@ const Contact = () => {
                 </div>
               </Card>
 
-              <Card className="p-4 hover:shadow-md transition-shadow duration-300">
+              <Card className="p-4 hover:shadow-md transition-shadow duration-300 border-gray-200">
                 <div className="flex items-center space-x-3">
-                  <div className="p-2 bg-portfolio-gray-100 rounded-lg">
-                    <Github className="h-5 w-5 text-portfolio-gray-700" />
+                  <div className="p-2 bg-gray-100 rounded-lg">
+                    <Github className="h-5 w-5 text-black" />
                   </div>
                   <div>
-                    <p className="font-medium">GitHub</p>
+                    <p className="font-medium text-black">GitHub</p>
                     <a 
                       href="https://github.com/henrydo" 
                       target="_blank" 
                       rel="noopener noreferrer"
-                      className="text-sm text-muted-foreground hover:text-primary transition-colors"
+                      className="text-sm text-gray-600 hover:text-black transition-colors"
                     >
                       GitHub Profile
                     </a>
@@ -121,16 +121,16 @@ const Contact = () => {
                 </div>
               </Card>
 
-              <Card className="p-4 hover:shadow-md transition-shadow duration-300">
+              <Card className="p-4 hover:shadow-md transition-shadow duration-300 border-gray-200">
                 <div className="flex items-center space-x-3">
-                  <div className="p-2 bg-portfolio-gray-100 rounded-lg">
-                    <Mail className="h-5 w-5 text-portfolio-gray-700" />
+                  <div className="p-2 bg-gray-100 rounded-lg">
+                    <Phone className="h-5 w-5 text-black" />
                   </div>
                   <div>
-                    <p className="font-medium">Phone</p>
+                    <p className="font-medium text-black">Phone</p>
                     <a 
                       href="tel:(504) 884-7618" 
-                      className="text-sm text-muted-foreground hover:text-primary transition-colors"
+                      className="text-sm text-gray-600 hover:text-black transition-colors"
                     >
                       (504) 884-7618
                     </a>
@@ -142,15 +142,15 @@ const Contact = () => {
 
           {/* Contact form */}
           <div className="lg:col-span-2">
-            <Card>
+            <Card className="border-gray-200">
               <CardHeader>
-                <CardTitle className="text-2xl font-poppins">Send a Message</CardTitle>
+                <CardTitle className="text-2xl font-poppins text-black">Send a Message</CardTitle>
               </CardHeader>
               <CardContent>
                 <form onSubmit={handleSubmit} className="space-y-6">
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                     <div className="space-y-2">
-                      <label htmlFor="name" className="text-sm font-medium">
+                      <label htmlFor="name" className="text-sm font-medium text-black">
                         Name *
                       </label>
                       <Input
@@ -161,10 +161,11 @@ const Contact = () => {
                         value={formData.name}
                         onChange={handleChange}
                         required
+                        className="border-gray-300 focus:border-black"
                       />
                     </div>
                     <div className="space-y-2">
-                      <label htmlFor="email" className="text-sm font-medium">
+                      <label htmlFor="email" className="text-sm font-medium text-black">
                         Email *
                       </label>
                       <Input
@@ -175,12 +176,13 @@ const Contact = () => {
                         value={formData.email}
                         onChange={handleChange}
                         required
+                        className="border-gray-300 focus:border-black"
                       />
                     </div>
                   </div>
                   
                   <div className="space-y-2">
-                    <label htmlFor="subject" className="text-sm font-medium">
+                    <label htmlFor="subject" className="text-sm font-medium text-black">
                       Subject *
                     </label>
                     <Input
@@ -191,18 +193,19 @@ const Contact = () => {
                       value={formData.subject}
                       onChange={handleChange}
                       required
+                      className="border-gray-300 focus:border-black"
                     />
                   </div>
 
                   <div className="space-y-2">
-                    <label htmlFor="message" className="text-sm font-medium">
+                    <label htmlFor="message" className="text-sm font-medium text-black">
                       Message *
                     </label>
                     <Textarea
                       id="message"
                       name="message"
                       placeholder="Tell me about your project or just say hi!"
-                      className="min-h-[120px]"
+                      className="min-h-[120px] border-gray-300 focus:border-black"
                       value={formData.message}
                       onChange={handleChange}
                       required
@@ -211,7 +214,7 @@ const Contact = () => {
 
                   <Button 
                     type="submit" 
-                    className="w-full bg-primary hover:bg-primary/90 text-primary-foreground"
+                    className="w-full bg-black hover:bg-gray-800 text-white"
                   >
                     Send Message
                   </Button>
