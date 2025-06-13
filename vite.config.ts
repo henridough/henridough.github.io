@@ -5,11 +5,12 @@ import { componentTagger } from "lovable-tagger";
 
 export default defineConfig(({ mode }) => {
   const plugins = [react()];
-  if (mode === 'development') {
+  if (mode === "development") {
     plugins.push(componentTagger());
   }
+
   return {
-    base: '/',
+    base: mode === "production" ? "/henridough.github.io/" : "/",
     server: {
       host: "::",
       port: 8080,
