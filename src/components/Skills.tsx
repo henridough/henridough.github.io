@@ -41,37 +41,37 @@ const Skills = () => {
   ];
 
   return (
-    <section id="skills" className="py-20">
+    <section id="skills" className="py-20 bg-white">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold font-poppins mb-4">
-            Skills & <span className="text-gradient">Expertise</span>
+          <h2 className="text-4xl font-bold font-poppins mb-4 text-black">
+            Skills & <span className="bg-gradient-to-r from-gray-600 to-black bg-clip-text text-transparent">Expertise</span>
           </h2>
-          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+          <p className="text-lg text-gray-600 max-w-2xl mx-auto">
             A comprehensive overview of my technical skills and proficiency levels across different technologies and frameworks.
           </p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {skillCategories.map((category, index) => (
-            <Card key={category.title} className="group hover:shadow-lg transition-all duration-300">
+            <Card key={category.title} className="group hover:shadow-lg transition-all duration-300 bg-white border-gray-200">
               <CardHeader className="text-center">
                 <div className="flex justify-center mb-4">
-                  <div className="p-3 bg-muted rounded-full text-foreground group-hover:bg-primary group-hover:text-primary-foreground transition-colors duration-300">
+                  <div className="p-3 bg-gray-100 rounded-full text-black group-hover:bg-black group-hover:text-white transition-colors duration-300">
                     {category.icon}
                   </div>
                 </div>
-                <CardTitle className="text-xl font-poppins">{category.title}</CardTitle>
+                <CardTitle className="text-xl font-poppins text-black">{category.title}</CardTitle>
               </CardHeader>
               <CardContent>
                 <div className="space-y-4">
                   {category.skills.map((skill) => (
                     <div key={skill.name} className="space-y-2">
                       <div className="flex justify-between text-sm">
-                        <span className="font-medium">{skill.name}</span>
-                        <span className="text-muted-foreground">{skill.level}%</span>
+                        <span className="font-medium text-black">{skill.name}</span>
+                        <span className="text-gray-600">{skill.level}%</span>
                       </div>
-                      <Progress value={skill.level} className="h-2" />
+                      <Progress value={skill.level} className="h-2 bg-gray-200" />
                     </div>
                   ))}
                 </div>
@@ -82,7 +82,7 @@ const Skills = () => {
 
         {/* Additional skills as badges */}
         <div className="mt-16 text-center">
-          <h3 className="text-2xl font-bold font-poppins mb-8">Additional Technologies & Tools</h3>
+          <h3 className="text-2xl font-bold font-poppins mb-8 text-black">Additional Technologies & Tools</h3>
           <div className="flex flex-wrap justify-center gap-3 max-w-4xl mx-auto">
             {[
               'Visual Studio', 'Android Studio', 'XCode', 'VS Code', 'NetBeans', 'Eclipse', 'PyCharm',
@@ -91,7 +91,7 @@ const Skills = () => {
             ].map((tech) => (
               <span
                 key={tech}
-                className="px-4 py-2 bg-muted text-muted-foreground rounded-full text-sm font-medium hover:bg-primary hover:text-primary-foreground transition-colors duration-300 cursor-default"
+                className="px-4 py-2 bg-gray-200 text-black rounded-full text-sm font-medium hover:bg-black hover:text-white transition-colors duration-300 cursor-default"
               >
                 {tech}
               </span>

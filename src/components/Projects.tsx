@@ -65,13 +65,13 @@ const Projects = () => {
     : projects.filter(project => project.category === selectedCategory);
 
   return (
-    <section id="projects" className="py-20 bg-muted/30">
+    <section id="projects" className="py-20 bg-gray-100">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold font-poppins mb-4">
-            Featured <span className="text-gradient">Projects</span>
+          <h2 className="text-4xl font-bold font-poppins mb-4 text-black">
+            Featured <span className="bg-gradient-to-r from-gray-600 to-black bg-clip-text text-transparent">Projects</span>
           </h2>
-          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+          <p className="text-lg text-gray-600 max-w-2xl mx-auto">
             Here are some of my notable projects that showcase my skills in application development, 
             from mobile apps to enterprise systems.
           </p>
@@ -84,7 +84,10 @@ const Projects = () => {
               key={category}
               variant={selectedCategory === category ? "default" : "outline"}
               onClick={() => setSelectedCategory(category)}
-              className="rounded-full"
+              className={selectedCategory === category 
+                ? "rounded-full bg-black text-white hover:bg-gray-800" 
+                : "rounded-full border-black text-black hover:bg-black hover:text-white"
+              }
             >
               {category}
             </Button>
@@ -94,7 +97,7 @@ const Projects = () => {
         {/* Projects grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {filteredProjects.map((project) => (
-            <Card key={project.id} className="group hover:shadow-lg transition-all duration-300 transform hover:-translate-y-2">
+            <Card key={project.id} className="group hover:shadow-lg transition-all duration-300 transform hover:-translate-y-2 bg-white border-gray-200">
               <div className="aspect-video overflow-hidden rounded-t-lg">
                 <img 
                   src={project.image} 
@@ -103,28 +106,28 @@ const Projects = () => {
                 />
               </div>
               <CardHeader>
-                <CardTitle className="text-xl font-poppins">{project.title}</CardTitle>
-                <CardDescription className="text-sm text-muted-foreground">
+                <CardTitle className="text-xl font-poppins text-black">{project.title}</CardTitle>
+                <CardDescription className="text-sm text-gray-600">
                   {project.description}
                 </CardDescription>
               </CardHeader>
               <CardContent>
                 <div className="flex flex-wrap gap-2 mb-4">
                   {project.tech.map((tech) => (
-                    <Badge key={tech} variant="secondary" className="text-xs">
+                    <Badge key={tech} className="text-xs bg-gray-200 text-black hover:bg-gray-300">
                       {tech}
                     </Badge>
                   ))}
                 </div>
                 <div className="flex gap-2">
-                  <Button size="sm" variant="outline" asChild>
+                  <Button size="sm" variant="outline" asChild className="border-black text-black hover:bg-black hover:text-white">
                     <a href={project.githubUrl} target="_blank" rel="noopener noreferrer">
                       <Github className="h-4 w-4 mr-2" />
                       Code
                     </a>
                   </Button>
                   {project.liveUrl && (
-                    <Button size="sm" asChild>
+                    <Button size="sm" asChild className="bg-black text-white hover:bg-gray-800">
                       <a href={project.liveUrl} target="_blank" rel="noopener noreferrer">
                         Live Demo
                       </a>

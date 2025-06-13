@@ -38,7 +38,8 @@ const Hero = () => {
               <img 
                 src="/lovable-uploads/6aff207e-956d-42d7-a7ee-bd546aaf609e.png" 
                 alt="Henry Do" 
-                className="w-32 h-32 md:w-40 md:h-40 rounded-full object-cover border-4 border-black shadow-lg"
+                className="w-32 h-32 md:w-40 md:h-40 rounded-full object-cover object-top border-4 border-black shadow-lg"
+                style={{ objectPosition: '50% 20%' }}
               />
             </div>
           </div>
@@ -69,7 +70,7 @@ const Hero = () => {
               onClick={downloadResume}
               variant="outline" 
               size="lg"
-              className="px-8 py-3 rounded-full font-medium transition-all duration-300 transform hover:scale-105 border-gray-400 text-gray-700 hover:bg-gray-100"
+              className="px-8 py-3 rounded-full font-medium transition-all duration-300 transform hover:scale-105 border-black text-black hover:bg-black hover:text-white"
             >
               Download Resume
             </Button>
